@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Starters",
+    "items": [
+      { "name": "Masala Dosa", "price": 80 },
+      { "name": "Medu Vada", "price": 50 },
+      { "name": "Chai", "price": 20 }
+    ]
+  },
+  {
+    "title": "Breakfast",
+    "items": [
+      { "name": "Family Platter", "price": 450 },
+      { "name": "Lamb Shank", "price": 320 }
+    ]
+  },
+  {
+    "title": "Lunch",
+    "items": [
+      { "name": "Gulab Jamun", "price": 60 }
+    ]
+  },
+  {
+    "title": "Desserts",
+    "items": [
+      { "name": "Gulab Jamun", "price": 60 }
+    ]
+  }
+]
