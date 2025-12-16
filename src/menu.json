@@ -10,7 +10,8 @@
   {
     "title": "Breakfast",
     "items": [
-      { "name": "Family Platter", "price": 450 },
+      { "name": "Masala Dosa", "price": 60 },
+      { "name": "Idli", "price": 40 },
       { "name": "Lamb Shank", "price": 320 }
     ]
   },
