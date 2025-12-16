@@ -25,6 +25,12 @@ jobs:
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan github.com >> ~/.ssh/known_hosts
 
+      - name: Configure git identity
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+
       - name: Push to public repo
         run: |
           git clone git@github.com:abhinavpbabu/restaurant-site-demo.git out

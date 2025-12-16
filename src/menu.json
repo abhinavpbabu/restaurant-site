@@ -21,9 +21,9 @@
     ]
   },
   {
-    "title": "Desserts",
+    "title": "Dinner",
     "items": [
-      { "name": "Gulab Jamun", "price": 60 }
+      { "name": "chappathi", "price": 15 }
     ]
   }
 ]
