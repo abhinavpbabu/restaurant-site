@@ -2,9 +2,9 @@
   {
     "title": "Starters",
     "items": [
-      { "name": "Masala Dosa", "price": 80 },
-      { "name": "Medu Vada", "price": 50 },
-      { "name": "Chai", "price": 20 }
+      { "name": "Chai", "price": 12 },
+      { "name": "Coffee", "price": 15 },
+      { "name": "vada", "price": 12 }
     ]
   },
   {
