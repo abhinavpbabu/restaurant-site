@@ -19,7 +19,14 @@
     "title": "Lunch",
     "items": [
       { "name": "Chicken Biriyani", "price": 150 },
-      { "name": "Mutton Biriyani", "price": 180 }
+      { "name": "Mutton Biriyani", "price": 180 },
+      { "name": "Veg Biriyani", "price": 120 },
+      { "name": "Fried Rice", "price": 100 },
+      { "name": "Meals", "price": 90 },
+      { "name": "Parotta", "price": 20 },
+      { "name": "Beef Fry", "price": 130 },
+      { "name": "Fish Fry", "price": 140 },
+      { "name": "Prawn Fry", "price": 160 }
     ]
   },
   {
