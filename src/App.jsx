@@ -123,7 +123,7 @@ export default function LavishFamilyDemo() {
 
   function getCatImgSrc(index) {
     // 1-based: cat1, cat2...
-    const base = `/images/cat${index + 1}`; // index from menu.map
+    const base = `${import.meta.env.BASE_URL}images/cat${index + 1}`; // index from menu.map
     return `${base}.jpg`; // primary try: .jpg
   }
 
@@ -146,7 +146,7 @@ export default function LavishFamilyDemo() {
       <section className="pt-20">
         <div className="max-w-6xl mx-auto">
           <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-            <img alt="Lavish Family Restaurant" src="https://images.unsplash.com/photo-1541542684-0b5b1b1fd6c7" className="w-full h-96 object-cover" loading="lazy" />
+            <img alt="Lavish Family Restaurant" src={`${import.meta.env.BASE_URL}images/banner.jpg`} className="w-full h-96 object-cover" loading="lazy" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent flex items-end">
               <div className="p-8 text-white">
                 <h1 className="text-4xl md:text-5xl font-extrabold">Lavish Family Restaurant</h1>
