@@ -12,7 +12,7 @@
     "items": [
       { "name": "Masala Dosa", "price": 60 },
       { "name": "Idli", "price": 40 },
-      { "name": "Lamb Shank", "price": 320 }
+      { "name": "Appam", "price": 12 }
     ]
   },
   {
