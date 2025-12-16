@@ -18,7 +18,8 @@
   {
     "title": "Lunch",
     "items": [
-      { "name": "Gulab Jamun", "price": 60 }
+      { "name": "Chicken Biriyani", "price": 150 },
+      { "name": "Mutton Biriyani", "price": 180 }
     ]
   },
   {
