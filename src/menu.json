@@ -4,7 +4,13 @@
     "items": [
       { "name": "Chai", "price": 12 },
       { "name": "Coffee", "price": 15 },
-      { "name": "vada", "price": 12 }
+      { "name": "vada", "price": 12 },
+      { "name": "Samosa", "price": 15 },
+      { "name": "Pakoda", "price": 20 },
+      { "name": "Spring Roll", "price": 30 },
+      { "name": "Chicken 65", "price": 80 },
+      { "name": "Gobi Manchurian", "price": 70 },
+      { "name": "Paneer Tikka", "price": 90 }
     ]
   },
   {
@@ -12,7 +18,13 @@
     "items": [
       { "name": "Masala Dosa", "price": 60 },
       { "name": "Idli", "price": 40 },
-      { "name": "Appam", "price": 12 }
+      { "name": "Appam", "price": 12 },
+      { "name": "Puttu", "price": 50 },
+      { "name": "Upma", "price": 30 },
+      { "name": "Poha", "price": 25 },
+      { "name": "Bread Omelette", "price": 45 },
+      { "name": "Paratha", "price": 35 },
+      { "name": "Chutney Sandwich", "price": 20 }
     ]
   },
   {
@@ -32,7 +44,43 @@
   {
     "title": "Dinner",
     "items": [
-      { "name": "chappathi", "price": 15 }
+      { "name": "chappathi", "price": 15 },
+      { "name": "Veg Kurma", "price": 80 },
+      { "name": "Chicken Curry", "price": 130 },
+      { "name": "Mutton Curry", "price": 160 },
+      { "name": "Fish Curry", "price": 140 },
+      { "name": "Prawn Curry", "price": 170 },
+      { "name": "Egg Curry", "price": 90 },
+      { "name": "Dal Fry", "price": 70 },
+      { "name": "Paneer Butter Masala", "price": 110 }
+    ]
+  },
+  {
+    "title": "Arabian",
+    "items": [
+      { "name": "Alfaham Mandi", "price": 220 },
+      { "name": "Chicken Shawarma", "price": 150 },
+      { "name": "Beef Shawarma", "price": 180 },
+      { "name": "Falafel", "price": 130 },
+      { "name": "Hummus", "price": 100 },
+      { "name": "Tabbouleh", "price": 90 },
+      { "name": "Pita Bread", "price": 40 },
+      { "name": "Baklava", "price": 70 },
+      { "name": "Knafeh", "price": 80 }
+    ]
+  },
+  {
+    "title": "Desserts",
+    "items": [
+      { "name": "Gulab Jamun", "price": 40 },
+      { "name": "Rasgulla", "price": 35 },
+      { "name": "Ice Cream", "price": 50 },
+      { "name": "Falooda", "price": 60 },
+      { "name": "Kheer", "price": 45 },
+      { "name": "Jalebi", "price": 30 },
+      { "name": "Ladoo", "price": 25 },
+      { "name": "Barfi", "price": 55 },
+      { "name": "Peda", "price": 20 }
     ]
   }
 ]

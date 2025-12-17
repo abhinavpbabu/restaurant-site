@@ -168,7 +168,12 @@ export default function LavishFamilyDemo() {
             {menu.map((sec, idx) => (
               <article
                 key={sec.title}
-                className="bg-white rounded-2xl shadow-lg overflow-hidden cursor-pointer transition-all duration-200 hover:shadow-sm hover:translate-y-0"
+                className="
+                  bg-white rounded-2xl shadow-md
+                  overflow-hidden cursor-pointer
+                  transition-all duration-200 ease-out
+                  hover:shadow-xl hover:-translate-y-1
+                "
                 onClick={() => openCategory(sec.title)}
               >
                 <div className="h-44 sm:h-40 lg:h-48 overflow-hidden bg-gray-100 relative flex items-center justify-center">
