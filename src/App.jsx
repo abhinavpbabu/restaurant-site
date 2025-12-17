@@ -129,8 +129,8 @@ export default function LavishFamilyDemo() {
 
   return (
     <div className="min-h-screen bg-white text-gray-800 antialiased">
-      <header ref={headerRef} className="fixed w-full z-40 bg-white/60 backdrop-blur-md shadow-sm">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <header ref={headerRef} className="fixed w-full z-40 bg-white/60 backdrop-blur-md shadow-sm h-14 md:h-auto">
+        <div className="max-w-6xl mx-auto md:px-6 md:py-4 px-3 py-2 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-full bg-orange-500 flex items-center justify-center text-white font-bold">L</div>
             <div className="font-semibold">Lavish</div>
@@ -143,9 +143,9 @@ export default function LavishFamilyDemo() {
         </div>
       </header>
 
-      <section className="pt-20">
+      <section className="pt-14 md:pt-20">
         <div className="max-w-6xl mx-auto">
-          <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+          <div className="relative rounded-none md:rounded-2xl overflow-hidden shadow-2xl">
             <img alt="Lavish Family Restaurant" src={`${import.meta.env.BASE_URL}images/banner.jpg`} className="w-full h-96 object-cover" loading="lazy" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent flex items-end">
               <div className="p-8 text-white">
