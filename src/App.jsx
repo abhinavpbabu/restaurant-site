@@ -7,7 +7,7 @@ import './App.css'
 import rawMenu from './menu.json';
 
 // Replace ADMIN_WHATSAPP with the admin number in international format without plus, e.g. 919876543210
-const ADMIN_WHATSAPP = "REPLACE_WITH_ADMIN_NUMBER";
+const ADMIN_WHATSAPP = "918589903513";
 
 export default function LavishFamilyDemo() {
   const [menu, setMenu] = useState([]);
@@ -126,6 +126,12 @@ export default function LavishFamilyDemo() {
     const base = `${import.meta.env.BASE_URL}images/cat${index + 1}`; // index from menu.map
     return `${base}.jpg`; // primary try: .jpg
   }
+
+  const totalPrice = plate.reduce(
+    (sum, it) => sum + it.price * it.qty,
+    0
+  );
+
 
   return (
     <div className="min-h-screen bg-white text-gray-800 antialiased">
@@ -276,10 +282,17 @@ export default function LavishFamilyDemo() {
                     <button onClick={() => changeQty(i, -1)} className="px-2 py-1 rounded-full border text-sm">-</button>
                     <div className="px-2">{it.qty}</div>
                     <button onClick={() => changeQty(i, +1)} className="px-2 py-1 rounded-full border text-sm">+</button>
-                    <button onClick={() => removeFromPlate(i)} className="px-2 py-1 rounded-full border text-sm">Remove</button>
+                    {/* <button onClick={() => removeFromPlate(i)} className="px-2 py-1 rounded-full border text-sm">Remove</button> */}
+                    <div className="font-semibold text-md">₹{it.price * it.qty}</div>
                   </div>
                 </div>
               ))}
+              {plate.length > 0 && (
+                <div className="mt-4 pt-3 border-t flex justify-between items-center">
+                  <span className="font-medium">Total</span>
+                  <span className="font-semibold text-lg">₹{totalPrice}</span>
+                </div>
+              )}
             </div>
 
             <div className="mt-4">
