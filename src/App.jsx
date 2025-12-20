@@ -5,6 +5,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import './App.css'
 import rawMenu from './menu.json';
+import testimonials from './testimonials.json';
 
 // Replace ADMIN_WHATSAPP with the admin number in international format without plus, e.g. 919876543210
 const ADMIN_WHATSAPP = "918589903513";
@@ -131,6 +132,19 @@ export default function LavishFamilyDemo() {
     (sum, it) => sum + it.price * it.qty,
     0
   );
+
+  if (!testimonials || testimonials.length === 0) return null;
+
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex((i) => (i + 1) % testimonials.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const t = testimonials[index];
 
 
   return (
@@ -260,6 +274,48 @@ export default function LavishFamilyDemo() {
           </div>
         </div>
       )}
+
+      <svg
+        width="240"
+        height="32"
+        viewBox="0 0 240 24"
+        className="mx-auto my-8 text-gray-400"
+        aria-hidden="true"
+      >
+        {/* Left line */}
+        <line x1="0" y1="12" x2="65" y2="12" stroke="currentColor" strokeWidth="1" />
+
+        {/* Right line */}
+        <line x1="175" y1="12" x2="240" y2="12" stroke="currentColor" strokeWidth="1" />
+
+        {/* Center ornament */}
+        <g
+          fill="currentColor"
+          transform="translate(120 12) scale(1.2) translate(-50 -55)"
+        >
+          <polygon points="60.41,47.63 53.52,46.16 50,40.07 46.48,46.16 39.59,47.63 44.3,52.87 43.56,59.87 50,57.01 56.44,59.87 55.7,52.87" />
+          <polygon points="71.55,48.93 68.74,44.05 65.93,48.93 60.41,50.1 64.18,54.29 63.59,59.89 68.74,57.6 73.89,59.89 73.3,54.29 77.07,50.1" />
+          <polygon points="85.49,51.71 83.38,48.05 81.27,51.71 77.13,52.59 79.96,55.73 79.51,59.93 83.38,58.22 87.24,59.93 86.8,55.73 89.63,52.59" />
+          <polygon points="34.07,48.93 31.26,44.05 28.45,48.93 22.93,50.1 26.7,54.29 26.11,59.89 31.26,57.6 36.41,59.89 35.82,54.29 39.59,50.1" />
+          <polygon points="18.73,51.71 16.62,48.05 14.51,51.71 10.37,52.59 13.2,55.73 12.76,59.93 16.62,58.22 20.49,59.93 20.04,55.73 22.87,52.59" />
+        </g>
+      </svg>
+
+
+
+      <section className="pb-20 bg-white-100">
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <h2 className="text-2xl font-semibold mb-8">What customers say</h2>
+
+          <blockquote className="text-lg italic text-gray-700">
+            “{t.text}”
+          </blockquote>
+
+          <div className="mt-4 font-medium text-gray-900">
+            {t.name}
+          </div>
+        </div>
+      </section>
 
       {/* Checkout / Plate Modal */}
       {showCheckout && (
