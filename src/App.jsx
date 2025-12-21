@@ -164,7 +164,7 @@ export default function LavishFamilyDemo() {
       </header>
 
       <section className="pt-14 md:pt-20">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto px-6">
           <div className="relative rounded-none md:rounded-2xl overflow-hidden shadow-2xl">
             <img alt="Lavish Family Restaurant" src={`${import.meta.env.BASE_URL}images/banner.jpg`} className="w-full h-96 object-cover" loading="lazy" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent flex items-end">
@@ -367,40 +367,38 @@ export default function LavishFamilyDemo() {
       )}
 
       <section id="location" className="py-16 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-          <div>
-            <h2 className="text-3xl font-semibold mb-4">Find Us</h2>
-            <p className="text-gray-600 mb-4">Lavish Family Restaurant · Family-friendly · Reservations welcome</p>
-
-            <div className="rounded-xl overflow-hidden shadow">
-              <iframe title="Lavish Family Location" src="https://www.google.com/maps?q=10.8505,76.2711&z=15&output=embed" className="w-full h-72 border-0" loading="lazy"></iframe>
-            </div>
-
-            <div id="contact" className="mt-6 bg-white p-6 rounded-xl shadow">
-              <h3 className="font-semibold">Contact</h3>
-              <p className="mt-2 text-sm text-gray-600">Address: 12 Market Lane, Sample City, Kerala</p>
-              <p className="mt-1 text-sm text-gray-600">Phone: +91 98765 43210</p>
-              <p className="mt-1 text-sm text-gray-600">Email: hello@lavishfamily.example</p>
-              <div className="mt-4 flex gap-3">
-                <a className="px-4 py-2 rounded-full border border-orange-200 text-orange-600 text-sm" href="tel:+919876543210">Call</a>
-                <a className="px-4 py-2 rounded-full bg-orange-500 text-white text-sm" href="#">Reserve</a>
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-semibold mb-4">Find Us</h2>
+          <p className="text-gray-600 mb-4">Lavish Family Restaurant · Family-friendly · Reservations welcome</p>
+          <div className="max-w-6xl mx-auto py-6 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+            <div>
+              <div className="rounded-xl overflow-hidden shadow">
+                <iframe title="Lavish Family Location" src="https://www.google.com/maps?q=10.8505,76.2711&z=15&output=embed" className="w-full h-72 border-0" loading="lazy"></iframe>
+              </div>
+              <div id="contact" className="mt-6 bg-white p-6 rounded-xl shadow">
+                <h3 className="font-semibold">Contact</h3>
+                <p className="mt-2 text-sm text-gray-600">Address: 12 Market Lane, Sample City, Kerala</p>
+                <p className="mt-1 text-sm text-gray-600">Phone: +91 98765 43210</p>
+                <p className="mt-1 text-sm text-gray-600">Email: hello@lavishfamily.example</p>
+                <div className="mt-4 flex gap-3">
+                  <a className="px-4 py-2 rounded-full border border-orange-200 text-orange-600 text-sm" href="tel:+919876543210">Call</a>
+                  <a className="px-4 py-2 rounded-full bg-orange-500 text-white text-sm" href="#">Reserve</a>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div className="flex flex-col gap-6">
-            <div className="p-6 bg-white rounded-2xl shadow-lg">
-              <h4 className="font-semibold">Opening Hours</h4>
-              <p className="text-sm text-gray-600 mt-2">Mon - Sun · 11:00 AM - 11:00 PM</p>
-            </div>
-
-            <div className="p-6 bg-white rounded-2xl shadow-lg">
-              <h4 className="font-semibold">Quick Menu Picks</h4>
-              <ul className="mt-3 text-sm text-gray-600 space-y-2">
-                <li>• Signature Family Platter</li>
-                <li>• Slow-cooked Lamb Shank</li>
-                <li>• Sizzling Teppan Noodles</li>
-              </ul>
+            <div className="flex flex-col gap-6">
+              <div className="p-6 bg-white rounded-2xl shadow-lg">
+                <h4 className="font-semibold">Opening Hours</h4>
+                <p className="text-sm text-gray-600 mt-2">Mon - Sun · 11:00 AM - 11:00 PM</p>
+              </div>
+              <div className="p-6 bg-white rounded-2xl shadow-lg">
+                <h4 className="font-semibold">Popular Dishes</h4>
+                <ul className="mt-3 text-sm text-gray-600 space-y-2">
+                  <li>• Chicken Biriyani</li>
+                  <li>• Masala Dosa</li>
+                  <li>• Alfaham Mandi</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
