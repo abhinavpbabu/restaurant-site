@@ -164,7 +164,7 @@ export default function LavishFamilyDemo() {
       </header>
 
       <section className="pt-14 md:pt-20">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto md:px-6">
           <div className="relative rounded-none md:rounded-2xl overflow-hidden shadow-2xl">
             <img alt="Lavish Family Restaurant" src={`${import.meta.env.BASE_URL}images/banner.jpg`} className="w-full h-96 object-cover" loading="lazy" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent flex items-end">
