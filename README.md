@@ -15,3 +15,10 @@ React website for restaurants.
 - HTML
 - CSS
 - Javascript
+
+## License
+
+Apache License 2.0
+
+## Contribution
+You are welcome to contribute.
