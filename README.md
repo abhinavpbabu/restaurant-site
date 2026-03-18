@@ -5,7 +5,7 @@
 
 A responsive restaurant website built with React that showcases menu items and provides a simple food ordering interface.
 
-Live demo: 
+Live demo: [https://abhinavpbabu.github.io/restaurant-site-demo/](https://abhinavpbabu.github.io/restaurant-site-demo/)
 
 ## Features
 
